@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PagoPrompt</string>
+    <string name="name_logo">logo</string>
+
+    <string name="lbl_user">Usuario</string>
+    <string name="lbl_pass">Contraseña</string>
+
+    <string name="h_user">Ingresa tu usuario</string>
+    <string name="h_pass">Ingresa tu contraseña</string>
+
+    <string name="btn_login">Ingresar</string>
+
+</resources>
