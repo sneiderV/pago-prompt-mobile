@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graySuperLight"
+    tools:context=".ListActivity">
+
+    <!-- Título centrado en la parte superior -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/title_list"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tarjeta con posición en z=1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="50dp"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <!-- Imagen al lado izquierdo del título y del subtítulo -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                android:src="@drawable/gota"
+                app:layout_constraintBottom_toBottomOf="@+id/subtitleTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/titleTextViewInCard" />
+
+            <!-- Título en negrita -->
+            <TextView
+                android:id="@+id/titleTextViewInCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/card_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Subtítulo con texto -->
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/card_sub_title"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toBottomOf="@id/titleTextViewInCard" />
+
+            <!-- Pequeño párrafo -->
+            <TextView
+                android:id="@+id/paragraphTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/card_body_1"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subtitleTextView" />
+
+            <TextView
+                android:id="@+id/paragraphTextView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:text="@string/card_body_2"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paragraphTextView" />
+
+
+            <!-- Dos textos como botones en la parte inferior -->
+            <TextView
+                android:id="@+id/button1TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_btn_posponer"
+                android:textAllCaps="true"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/button2TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/paragraphTextView2" />
+
+            <TextView
+                android:id="@+id/button2TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/card_btn_pagar"
+                android:textAllCaps="true"
+                android:textColor="@color/purpleDark"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/button1TextView"
+                app:layout_constraintTop_toBottomOf="@id/paragraphTextView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/primary"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

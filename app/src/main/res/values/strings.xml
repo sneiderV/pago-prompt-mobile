@@ -2,6 +2,9 @@
     <string name="app_name">PagoPrompt</string>
     <string name="name_logo">logo</string>
 
+    <string name="title_list">Servicios disponibles</string>
+    <string name="title_postpone">¿Deseas posponer la alarma?</string>
+
     <string name="lbl_user">Usuario</string>
     <string name="lbl_pass">Contraseña</string>
 
@@ -9,5 +12,17 @@
     <string name="h_pass">Ingresa tu contraseña</string>
 
     <string name="btn_login">Ingresar</string>
+    <string name="btn_home">Inicio</string>
+    <string name="btn_logout">Salir</string>
+
+    <string name="card_title">Agua</string>
+    <string name="card_sub_title">Fecha de corte: 01-04-2024</string>
+    <string name="card_body_1">Num.contrato 123-456-789-10</string>
+    <string name="card_body_2">Valor total: $120.000</string>
+    <string name="card_btn_posponer">Posponer</string>
+    <string name="card_btn_pagar">Pagar</string>
+
+    <string name="pp_p1">Requerimos confirmar que seas tu, por favor realiza la autenticación facial.</string>
+    <string name="pp_p2">Ajusta tu rostro al óvalo que se encuentra abajo y cuando estés listo presiona continuar</string>
 
 </resources>
