@@ -53,7 +53,7 @@
                 android:outlineProvider="none"
                 android:paddingHorizontal="3dp"
                 android:text="@string/lbl_user"
-                android:textColor="@color/edit_text_label" />
+                android:textColor="@color/text_gray" />
 
             <EditText
                 android:id="@+id/fieldUser"
@@ -85,7 +85,7 @@
                 android:outlineProvider="none"
                 android:paddingHorizontal="3dp"
                 android:text="@string/lbl_pass"
-                android:textColor="@color/edit_text_label" />
+                android:textColor="@color/text_gray" />
 
             <EditText
                 android:id="@+id/passField"
