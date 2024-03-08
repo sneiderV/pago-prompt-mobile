@@ -33,4 +33,8 @@
 
     <string name="t_continue">Continuar</string>
 
+    <string name="c_t_redirect">Redirigiendo</string>
+    <string name="c_b_redirect">en 3 segundos.</string>
+
+
 </resources>
