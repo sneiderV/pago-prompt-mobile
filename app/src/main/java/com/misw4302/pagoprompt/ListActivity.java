@@ -39,5 +39,20 @@ public class ListActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Busca el TextView por su ID
+        TextView button2TextView = findViewById(R.id.button2TextView);
+
+        // Agrega un OnClickListener al TextView
+        button2TextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crea un Intent para iniciar la actividad PostponeActivity
+                Intent intent = new Intent(ListActivity.this, PayActivity.class);
+
+                // Inicia la actividad
+                startActivity(intent);
+            }
+        });
     }
 }
