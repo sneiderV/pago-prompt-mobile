@@ -25,4 +25,16 @@
     <string name="pp_p1">Requerimos confirmar que seas tu, por favor realiza la autenticación facial.</string>
     <string name="pp_p2">Ajusta tu rostro al óvalo que se encuentra abajo y cuando estés listo presiona continuar</string>
 
+    <string name="c_t_pay">Realizar pago</string>
+
+    <string name="c_b_pay">Te llevaremos a la plataforma de pago de tu proveedor, allí deberás diligenciar el formulario como lo haces habitualmente desde un navegador web.</string>
+
+    <string name="t_cancel">Cancelar</string>
+
+    <string name="t_continue">Continuar</string>
+
+    <string name="c_t_redirect">Redirigiendo</string>
+    <string name="c_b_redirect">en 3 segundos.</string>
+
+
 </resources>
